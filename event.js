@@ -1,4 +1,4 @@
-var eventsList= [];
+var eventList = [];
 
 var Event = function(opening, recurring, startDate, endDate){
   this.opening = opening;
@@ -6,9 +6,9 @@ var Event = function(opening, recurring, startDate, endDate){
   this.startDate = startDate;
   this.endDate = endDate;
 
-  this.availabilities = function(fromDate, toDate){
+  eventList.push(this);
+};
 
-    return //Something awesome;
-  };
-  eventsList.push(this);
+Event.availabilities = function(fromDate, toDate){
+  return //Something awesome;
 };
