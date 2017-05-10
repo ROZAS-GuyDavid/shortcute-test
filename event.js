@@ -9,6 +9,6 @@ var Event = function(opening, recurring, startDate, endDate){
   eventList.push(this);
 };
 
-Event.availabilities = function(fromDate, toDate){
+Event.prototype.availabilities = function(fromDate, toDate){
   return //Something awesome;
 };

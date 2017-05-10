@@ -10,7 +10,7 @@ new Event(false, false, startDate, endDate); // intervention scheduled
 var fromDate = new Date(2016,7,4,10,00);
 var toDate = new Date(2016,7,10,10,00);
 
-Event.availabilities(fromDate, toDate);
+Event.prototype.availabilities(fromDate, toDate);
 
 /*
  * Answer should be : 
